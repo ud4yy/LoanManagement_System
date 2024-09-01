@@ -7,5 +7,7 @@ import com.example.Loan_ManagementSystem.models.LoanOfficer;
 
 public interface LoanOfficerRepository extends JpaRepository<LoanOfficer, Integer> {
 
+    LoanOfficer findTopByOrderByNumberOfLoansAsc();
+
     
 }

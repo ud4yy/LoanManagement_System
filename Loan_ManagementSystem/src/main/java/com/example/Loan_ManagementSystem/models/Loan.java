@@ -14,7 +14,7 @@ import java.util.Date;
 @Data
 @Table(name = "Loans")
 public class Loan {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer loanId;
@@ -28,10 +28,14 @@ public class Loan {
     private LoanOfficer loanOfficer;
 
     @Column(nullable = false)
-    private BigDecimal amount;
+    private Double amount;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private LoanStatus status;
+
+    @Column(nullable = false)
+    private Double rate;
 
     @Column(nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
@@ -41,12 +45,14 @@ public class Loan {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedAt;
 
-    // Getters and Setters
-}
+    @PrePersist
+    protected void onCreate() {
+        createdAt = new Date();
+        updatedAt = new Date();
+    }
 
-enum LoanStatus {
-    Pending,
-    Approved,
-    Rejected,
-    Completed
+    @PreUpdate
+    protected void onUpdate() {
+        updatedAt = new Date();
+    }
 }

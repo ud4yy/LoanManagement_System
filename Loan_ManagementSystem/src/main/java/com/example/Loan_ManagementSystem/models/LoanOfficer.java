@@ -24,6 +24,9 @@ public class LoanOfficer {
     @Column(columnDefinition = "json")
     private String assignedLoans;
 
+    @Column(name="numberOfLoans")
+    private Integer numberOfLoans; // or the property you are actually using
+
     @Column(nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
