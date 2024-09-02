@@ -41,8 +41,3 @@ public class User {
     // Getters and Setters
 }
 
-enum Role {
-    Admin,
-    Customer,
-    LoanOfficer
-}

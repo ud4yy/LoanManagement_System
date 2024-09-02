@@ -12,7 +12,7 @@ import com.example.Loan_ManagementSystem.repo.UserRepository;
 
 @RestController
 
-public class userDetails {
+public class BasicController{
 
     @Autowired
     LoanOfficerRepository loanOfficerRepository;
@@ -23,5 +23,7 @@ public class userDetails {
         return userRepository.getById(id);
     }
 
+   
+    
 
 }
