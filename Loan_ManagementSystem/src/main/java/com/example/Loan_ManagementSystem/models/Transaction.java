@@ -1,10 +1,17 @@
 package com.example.Loan_ManagementSystem.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Transactions")
 public class Transaction {
     
@@ -17,7 +24,7 @@ public class Transaction {
     private Loan loan;
 
     @Column(nullable = false)
-    private BigDecimal amount;
+    private Double amount;
 
     @Enumerated(EnumType.STRING)
     private TransactionType transactionType;
@@ -29,7 +36,4 @@ public class Transaction {
     // Getters and Setters
 }
 
-enum TransactionType {
-    Payment,
-    Disbursement
-}
+

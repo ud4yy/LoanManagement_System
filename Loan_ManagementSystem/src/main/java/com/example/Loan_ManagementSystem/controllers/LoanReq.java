@@ -1,6 +1,6 @@
 package com.example.Loan_ManagementSystem.controllers;
 
-import java.beans.JavaBean;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

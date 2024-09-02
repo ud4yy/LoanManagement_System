@@ -30,6 +30,9 @@ public class Loan {
     @Column(nullable = false)
     private Double amount;
 
+    @Column(nullable = false)
+    private Double balance;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private LoanStatus status;

@@ -45,7 +45,7 @@ public class LoanApplyService {
         loan.setCustomer(customer);
         loan.setAmount(amount);
         loan.setStatus(LoanStatus.Pending);
-    
+        loan.setBalance(0.0);
         // Fetch the loan officer with the least number of loans
         LoanOfficer officer = getLoanOfficerWithLeastLoans();
         if (officer == null) {
@@ -70,7 +70,7 @@ public class LoanApplyService {
         return "Loan applied successfully";
     }
     
-
+    //Assigning loans to loanofficer
     private LoanOfficer updateAssignedLoans(LoanOfficer officer, Loan loan) {
         try {
             // Handle null case for assignedLoans
