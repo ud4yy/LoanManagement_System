@@ -11,4 +11,6 @@ import com.example.Loan_ManagementSystem.models.User;
 public interface UserRepository extends JpaRepository<User, Integer> {
     List<User> findByRole(Role role);
 
+    User findByName(String username);
+
 }
