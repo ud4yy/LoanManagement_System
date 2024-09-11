@@ -26,5 +26,5 @@ The Loan Management System is a comprehensive application designed to manage loa
 
 Here is the Entity-Relationship (ER) Diagram for the Loan Management System:
 
-![ER Diagram](https://drive.google.com/uc?id=1bLXo9n6PgWR1-a5OtFIhM_r2p8OhTa-Q)
+![ER Diagram](https://drive.google.com/file/d/1bLXo9n6PgWR1-a5OtFIhM_r2p8OhTa-Q/view?usp=sharing)
 
