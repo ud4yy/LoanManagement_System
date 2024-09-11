@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The Loan Management System is a comprehensive application designed to manage loan applications, transactions, and repayments. It offers secure access to APIs, real-time email notifications, and robust transaction reporting. The system provides a user-friendly interface for both applicants and administrators, streamlining the loan process and ensuring effective management of loan-related activities.
+The Loan Management System is a comprehensive application designed to manage loan applications, transactions, and repayments. It offers secure access to APIs, real-time email notifications, and robust transaction reporting. 
 
 ## Tools & Technologies Used
 
