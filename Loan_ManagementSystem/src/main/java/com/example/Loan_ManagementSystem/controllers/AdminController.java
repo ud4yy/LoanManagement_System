@@ -24,11 +24,7 @@ public class AdminController {
 
     @GetMapping("/getOfficers/{id}")
     public List<User> getUsersByRole(@PathVariable int id) {
-        // Convert the first letter to uppercase and the rest to lowercase
-        // String formattedRole = role.substring(0, 1).toUpperCase() + role.substring(1).toLowerCase();
-        // System.out.println(role);
-        // Role userRole = Role.valueOf(role);
-        // return userRepo.findByRole(userRole);
+       
         Role userRole = Role.valueOf("LoanOfficer");
         if(id==0){
            userRole =  Role.valueOf("Customer");
@@ -39,7 +35,6 @@ public class AdminController {
 
     @PostMapping("/addOfficer")
     public String postMethodName() {
-        //TODO: process POST request
         return "entity";
     }
 }
